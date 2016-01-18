@@ -23,6 +23,8 @@ Drupal 8 相对于 Drupal 7 发生了巨大的变化。Drupal 8 的主题层基�
 3. 翻译 --> 完成翻译
 4. 发送 pull request 到本 [Repository](https://github.com/ranqiangjun/The-Drupal-8-Theming-Guide)
 
+> [建议用词](SUGGESTIONS.md)
+
 ## 在线阅读
 
 [https://ranqiangjun.gitbooks.io/the-drupal-8-theming-guide/content/](https://ranqiangjun.gitbooks.io/the-drupal-8-theming-guide/content/
