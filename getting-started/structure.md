@@ -1,3 +1,3 @@
 ## /themes
 
-The `/themes` folder in the root of the project is where custom and contributed themes are located.
+项目根目录下的 `/themes` 文件夹用于存放自开发以及第三方主题的目录。
