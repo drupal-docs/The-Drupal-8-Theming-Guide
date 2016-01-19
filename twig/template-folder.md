@@ -1,3 +1,3 @@
-## /templates folder
+## /templates 文件夹
 
-With the `theme_`-functions gone, almost all the core themes (and modules) now contain a new folder called `templates`. In this folder, the Twig template files are stored.
+因为 `theme_` 函数已经不复存在，几乎所有的核心主题（以及模块）都包含了新的名为 `templates` 的目录。在这个目录中保存了 Twig 的模板文件。
