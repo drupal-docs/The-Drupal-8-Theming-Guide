@@ -1,5 +1,5 @@
 # Twig
 
-In the previous chapter, Twig was introduced. The new template engine for Drupal. In this chapter, the basics to work with this template engine will be shown.
+在前面的章节中提到了新的 Drupal 模板引擎 Twig。在本章中会简单的介绍一下如何使用这一模板引擎。
 
-The first version of Twig was released on October 12, 2009. The syntax originates from Jinja and Django templates. Currently, Twig is maintained by **Fabien Potencier**.
+Twig 的第一个版本发布于 2009 年 10 月 12 日。语法参考了 Jinja 和 Django 模板。目前 Twig 由 **Fabien Potencier** 维护。

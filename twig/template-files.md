@@ -1,3 +1,3 @@
-# Template files (Twig)
+# 模板文件 (Twig)
 
-The next section goes into detail about how you can modify and override these templates. It also handles how you can completely control all the classes add to the layout.
+下一节将会详细介绍如何修改和覆盖这些模板。还将讲述如何获得加入到布局中的全部类的控制权。
