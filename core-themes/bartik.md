@@ -1,18 +1,18 @@
 ## Bartik
 
-*Bartik* was introduced in Drupal 7 as a new, clean and simple theme. The theme has some new cool features in Drupal 8 and is also completely responsive. Bartik is the default user-facing theme in Drupal 8.
+*Bartik* 是一个随 Drupal 7 诞生的简洁主题。这个主题在 Drupal 8 升级为响应式，并提供了更多新特性。Bartik 是 Drupal 8 下的缺省的面向用户的主题。
 
 `base theme: classy`
 
-### Moving Bartik forward
+### Bartik 的进步
 
-During the development of Drupal 8, the Bartik theme was barely making any progress. For this reason, the maintainership for the theme has changed. [Emma Karayiannis](https://www.drupal.org/u/emma.maria) is the new Bartik maintainer. This happened after the first couple of betas. Since then, Bartik really started to move forward again.
+在 Drupal 8 的开发过程中，Bartik 主题几乎没有任何进展。所以在 Drupal 8 的 Beta 期间，由 [Emma Karayiannis](https://www.drupal.org/u/emma.maria) 担任新的 Bartik 管理人，从这之后，Bartik 才开始跟上进度。
 
 ![Bartik screenshot](../img/bartik.png)
 
 ***
 
-**Read more**
+**延伸阅读**
 
-* [Bartik documentation on d.o](https://www.drupal.org/documentation/themes/bartik)
+* [官方网站的 Bartik 文档](https://www.drupal.org/documentation/themes/bartik)
 * [\[META\] Overhaul Bartik's code](https://www.drupal.org/node/1342054)
