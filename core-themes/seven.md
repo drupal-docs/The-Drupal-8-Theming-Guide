@@ -1,58 +1,62 @@
 ## Seven
 
-*Seven* was introduced in Drupal 7 as the default administrative theme. It was designed and created to improve the Drupal 7 user experience as part of the Drupal 7 UX initiative. Seven maintains to be the default administrative theme in Drupal 8. [A style guide for Seven](https://groups.drupal.org/node/283223) was introduced to improve this experience even more and give it a refreshing look. The Seven theme is currently maintained by [Lewis Nyman](https://www.drupal.org/u/lewisnyman). 
+*Seven* 在 Drupal 7 中诞生，用做缺省的管理主题，他的设计目的是增强 Drupal 7 的用户体验。Seven 在 Drupal 8 中仍然是缺省的管理主题。使用 [Seven 样式指南](https://groups.drupal.org/node/283223)来进一步改善体验和外观。Seven 主题当前由 [Lewis Nyman](https://www.drupal.org/u/lewisnyman) 管理。
 
-`base theme: classy`
+~~~yaml
+base theme: classy
+~~~
 
-> Some people might be wondering if this theme should be renamed to `eight` ([Rename Seven in D8](https://www.drupal.org/node/1297428))? The answer is **no**.
+> 有些用户可能会奇怪，为什么这个主题不改名叫 `eight`（[D8 中重新命名](https://www.drupal.org/node/1297428)）？
+> 回答是 **不**
 
 ![Seven screenshot](../img/seven.png)
 
-### An interview with Lewis Nyman
+### 采访 Lewis Nyman
 
-#### What is your job as maintainer of the Seven theme?
+#### Seven 主题的管理者的工作内容是什么？
 
-The job of a core component maintainer is [well documented.](https://www.drupal.org/contribute/core-maintainers#component) My primary role is to keep an overview of all the issues in the [Seven queue.](https://www.drupal.org/project/issues/drupal?component=Seven+theme) There are very few people who have this kind of overview, so it's useful to be able to point someone in the right direction if they come to be asking if a bug has already been reported or if a discussion has already happened.
+有[完善的文档](https://www.drupal.org/contribute/core-maintainers#component)来说明核心组件管理者的工作内容。我的首要职责是概览 [Seven Queue](https://www.drupal.org/project/issues/drupal?component=Seven+theme) 中的所有 Issue，很少有人会做这个事情，但是只有这样，在有人报告 BUG 的时候或者发起讨论的时候，才能判断这些 Issue 是否已经存在。
 
-I'm also responsible for making sure the issues are in a organised and in a good state to work on. I also have enough experience to review all the patches for Seven, checking them for quality and consistency.
+我还要负责确认 Issue 已经被正确的组织，并且被有序的处理。另外，我丰富的经验确保我有能力评审 Seven 所有的补丁，检查他们的质量，确保他们的一致性。
 
-#### What are new features for the Seven theme in Drupal 8?
+#### Drupal 8 中的 Seven 主题有什么新特性？
 
-Seven's design has evolved in Drupal 8. [Ry5n,](https://www.drupal.org/u/ry5n) [Yoroy,](https://www.drupal.org/u/yoroy) and [Bojhan](https://www.drupal.org/u/bojhan) produced a style guide for which has improved the look-and-feel of the theme as well as providing a more stable and consistent base to make UX improvements across the many core modules.
+Seven 的设计追随了 Drupal 8 的脚步。[Ry5n](https://www.drupal.org/u/ry5n) 、[Yoroy](https://www.drupal.org/u/yoroy) 和 [Bojhan](https://www.drupal.org/u/bojhan) 编制了一份样式指南，增强了这一主题的外观表现，同时也为很多核心模块的用户体验的提升提供了良好的基础。
 
-Some examples would be consistent use of different button types, dropbuttons, the new content creation layout, and the inline form errors.
+有些例子还会持续使用不同的按钮类型、下拉按钮、新的内容编辑布局，以及行内的 Form 错误提示。
 
-#### What does the future for the Seven theme look like? Drupal 8.1 — or future Drupal 9? Are there any current plans?
+#### Seven 主题以后会变成怎样？对未来的 Drupal 8.1 或者 Drupal 9 已经有计划了么？
 
-Seven has slowly embraced component based design. Using the principles of the style guide and our [new CSS standards,](https://www.drupal.org/coding-standards/css) a lot of the CSS in Seven is now using more abstract, reuseable, CSS components. I imagine that Seven will expand on these UI components in the 8.x point releases to cover more varied situations that we require in core and contrib.
+Seven 正在缓慢的向组件化设计靠拢。根据样式指南和我们的 [CSS 新标准](https://www.drupal.org/coding-standards/css)，Seven 中的很多 CSS 正在使用更加抽象、可复用的 CSS 组件。我想，Seven 会在 8.x 的组件基础上发展，以适应核心和第三方不断增长的需求。
 
-In Drupal 9, well there's been [discussion on embracing component based design](https://events.drupal.org/losangeles2015/sessions/drupal-9-components-library-next-theme-system) throughout the whole of Drupal's theme system, not only the CSS.
+在 Drupal 9 中，正在讨论的 [组件化设计](https://events.drupal.org/losangeles2015/sessions/drupal-9-components-library-next-theme-system)不仅仅涵盖了 CSS，而是整个 Drupal 主题系统。
 
-If this happens in Drupal 9, Seven will likely become the first test case for this system.
+如果 Drupal 9 的计划能够实现，Seven 会是这个系统的第一个测试用例。
 
-We've also talked about adding more animation and "fanciness" to Seven, now we are in a more stable position with the CSS. We also joke about adding sound to the UI, you never know!
+现在的 CSS 如此强大，我们还讨论了关于向 Seven 主题增加更多的视觉效果的问题。有人开玩笑说为界面增加音效，天知道这是不是玩笑。
 
-#### Something we've been talking about is the style guide for Drupal. Has there been any progress?
 
-We ran into some maintenance problems with the [original photoshop style guide](https://groups.drupal.org/node/283223) it was a pain to keep it up to date when the design evolved during implementation and beyond.
+#### 我们刚在讨论的内容中有一部分是关于 Drupal 的样式指南，这方面的进展如何呢？
 
-We've had a plan in place for a while to [document Seven's CSS components using KSS](https://www.drupal.org/node/2404111), which would be amazing as we could generate the style guide from core code, similar to the documentation on [api.drupal.org](https://api.drupal.org) and similar to the plans to [document Drupal core's Javascript.](https://www.drupal.org/node/2182153) We ran into a bit of a roadblock however, because the KSS syntax is quite different to Drupal's current commenting standards. There is still a lot of urgent work to do before Drupal 8 hits release candidate, which is when HTML and CSS changes are frozen, so this has taken a bit of a backseat for the time being.
+我们遇到了一些跟 [原有 Photoshop 样式指南](https://groups.drupal.org/node/283223) 有关的维护问题，要在设计实现过程中跟进是个比较痛苦的事情。
 
-#### Some people find the name very confusing. What about you? If you could pick a name, what would that name be?
+我们现在已经有了一个计划，[使用 KSS 来实现 Seven 的 CSS 组件](https://www.drupal.org/node/2404111)，这样我们可以为核心代码生成和 [api.drupal.org](https://api.drupal.org) 以及 [Drupal 核心 Javascript 文档](https://www.drupal.org/node/2182153)类似格式的样式指南。因为 KSS 的语法和现有 Drupal 的注释标准颇有不同，造成了一些障碍。在 Drupal 8 发布 RC 版本之后，HTML 和 CSS 代码会被冻结，在这之前还有很多事情要做，所以这部分内容只能推迟完成。
 
-Over the years I think I've gone back and forth on the name. I think that a name is just a word that takes on the meaning we assign to it. Seven is the name of the administration theme that ships with Drupal, most people know that by now. Changing it now would invite more confusion.
+#### 有些人觉得这名字很古怪。你觉得呢？如果让你来命名，你会起个什么名字？
 
-If we were creating it now and choosing a name, I would probably stick with Bartik's tradition of naming it after a famous person. Maybe after one of those adolescent ninja turtles.
+近年来，我想我已经不太在意这个名字了。我认为名字的意义是我们赋予的。大家都知道，Seven 是随 Drupal 发行的管理主题。改了名可能会更加麻烦。
 
-#### What are the main challenges in building an administration theme for Drupal?
+如果我们现在创建了这个主题，并给他起个名字，我可能会像 Bartik 一样，用名人来命名。也许是忍者神龟中的一个。
 
-The biggest problem right now is the number of modules that require different user interfaces. Some modules make minor tweaks to the UI to meet their needs, some creating their own from scratch. It's very hard for an admin theme to support all these use cases without something breaking, let alone making the UX feel cohesive.
+#### 为 Drupal 创建管理主题的最大挑战是什么？
 
-My dream is to have no admin CSS in modules at all. My realistic aim is to have minimal CSS. I want to keep building Seven into a really useful UI framework, and to continue educating module developers on when they should use the components available to them to create a great, consistent UX.
+现在最大的问题是，大量的模块都需要不同的用户界面。有的模块会为了自己的需要来调整现有界面，有些甚至会从头做起。一个管理主题想要无损的支持所有的需求是个难题。
+
+我的梦想是，在模块中完全没有管理界面的 CSS。切近一些的目标是尽量减少这种 CSS。我希望持续发展 Seven 主题，使之成为一个真正有用的界面框架，持续的影响模块开发者，利用已有的组件来编写一致的用户体验。
 
 ***
 
-**Read more**
+**延伸阅读**
 
-* [Seven documentation on d.o](https://www.drupal.org/documentation/themes/seven)
+* [官方网站的 Seven 文档](https://www.drupal.org/documentation/themes/seven)
 * [Lewis Nyman](http://lewisnyman.co.uk/)

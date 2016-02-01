@@ -1,42 +1,49 @@
 
 ## Classy
 
-`<div class="do-not-add-classes-in-drupal-core"></div>`
+~~~html
+<div class="do-not-add-classes-in-drupal-core"></div>
+~~~
 
-At DrupalCon Austin (2014) the need for a new core *base* theme came up. This need was part of what has been referred to as the **Consensus Banana**.
 
-### Consensus Banana
+2014 年奥斯汀 DrupalCon 上提出对新的核心基主题的需求。这一需求后来成为  **Consensus 
+Banana** 的一部分。
 
-> Where did the **banana** come from?
-> 2 years before DrupalCon Austin, at BadCamp, John Albin ([JohnAlbin](https://www.drupal.org/u/johnalbin)) was holding a plastic sword from the pirate fest the day before. It was known as the sword of consensus. Morten ([mortendk](https://www.drupal.org/u/mortendk)) had a banana during the conference that he was using to point to people and ask “so can we agree on X?”. That is how it became the banana of consensus. It was basically a pointing stick.
-> *Scott Reeves*
+### 共识之蕉（Consensus Banana）
 
-#### The meta issue
+> **香蕉** 从哪里来？
 
-Here's a brief overview of [the meta issue](https://www.drupal.org/node/2289511):
+> 奥斯汀 DrupalCon 之前两年的一个 BadCamp 上，John Albin（[JohnAlbin](https://www.drupal.org/u/johnalbin)）在海盗节前夕手持一把塑料剑，这把剑称为共识之剑。Moten ([mortendk](https://www.drupal.org/u/mortendk)) 在会上经常手持一根香蕉指向他人提问 “所以我们就 x 问题达成共识了？”，这就是共识之蕉的由来。说的就是一个可用于指点的工具。
 
-> *Create a new core theme (code name "classy") that contains a copy of the all current core template files; this is for the "sensible 2/3" camp. And then modify all of the core/modules template files to contain minimal classes (only those needed for functionality); this would be for the "clean 1/3" camp. To ensure that Seven and Bartik continue to function properly, they should use "classy" as their base theme.*
+*Scott Reeves*
 
-#### Technical changes
+#### Meta issue
 
-Technically it comes down to this: the classes from core have been moved into the classy base theme. This was done in two phases. During the first phase the classes have been moved out of preprocess functions and moved into core template files. In the second phase the core template files with classes have been moved into Classy meaning all of the classes have been removed from core templates. You could now say that all the template files in core are now 'classless' (=no more `class="whatever"` in core).
+下面是一个对 [Meta issue](https://www.drupal.org/node/2289511) 的概述。
 
-Themers no longer require a base theme like [mothership](https://www.drupal.org/project/mothership) to *keelhaul the div*! A survey showed that not all themers want the same markup, and that they don't need all the wrapper <divs>. Thanks to Classy, no one has to waste any more time undoing core. The group of themers that wants sensible default classes can use classy as a base theme when developing their custom themes (more information on that later). The second group, that wants full control of all the markup and the classes, can start from scratch, without having to override anything, unlike the Drupal 7 experience.
+> 创建一个名为 "classy" 的核心基主题，包含目前所有核心模板的文件，。然后修改所有的核心/模块模板文件，把其中的类做最小化处理（仅包含有用部分）。然后确保 Seven 和 Bartik 能够正常工作。
 
-### Classy, a new base theme
+#### 技术更新
 
-At DrupalCon Amsterdam, the **classy.info.yml** got commited into Drupal 8 core by Dries. The change record can be found [here](https://www.drupal.org/node/2337467).
-This means Classy is the new `base theme` in Drupal core where *Bartik* and *Seven* are both extending from.
+技术的角度来说：移植核心类到 Classy 基主题。这一工作分成两个步骤：第一阶段，把 preprocess 函数中把类移动到核心模板文件中；第二阶段，把包含所有类的核心模板文件转到 Classy 中，这样就保证了核心模板中不再有这些内容。接下来就可以再认为所有核心模板文件都不再使用 class 了（核心中不再使用 `class="whatever"` 了）。
 
-[Add classy.info.yml to core, set Classy as base theme for Bartik and Seven](https://www.drupal.org/node/2329501)
+主题开发者不再需要一个类似 [mothership](https://www.drupal.org/project/mothership) 这样的基主题来清理多余的 div 了。调查表明，不是所有的主题开发者都需要这些一致的标记，他们不需要那么多的 `<div>`。感谢 Classy，不再需要在反抗核心上继续浪费精力了。一些主题开发者在开发自己的主题的时候，需要利用 Classy 获得有用的缺省类；而另一些开发者需要能够从头开始，不需要进行重载就获得完全的控制，拜托 Drupal 7 时代的阴影。
 
-### Backwards compatibility
+### Classy，新的基主题
 
-Classy can be relied on to maintain backwards compatibility throughout the Drupal 8 cycle.
+在阿姆斯特丹 DrupalCon 上，**classy.info.yml** 由 Dries 提交到了 Drupal 8 核心中。[变更记录](https://www.drupal.org/node/2337467)
+
+这意味着 Classy 是新的核心`基主题`，Bartik 和 Seven 都以该主题为基础派生而来。
+
+[classy.info.yml 加入核心，并成为 Bartik 和 Seven 的基主题](https://www.drupal.org/node/2329501)
+
+### 向后兼容性
+
+Classy 遵从 Drupal 8 的规则，提供可靠的向后兼容性。
 
 ***
 
-**Read more**
+**延伸阅读**
 
 * Modules Unraveled, episode 119: [The Classy Base Theme for Drupal 8 with Scott Reeves and David Hernandez](https://www.youtube.com/watch?v=uIutb2-Vc50).
 * The official change record: [Added a new base theme to core called Classy](https://www.drupal.org/node/2337467)
